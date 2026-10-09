@@ -1,4 +1,3 @@
-// ---------- Aparência padrão (tema preto) ----------
 Chart.defaults.color = "#c4c4c9";
 Chart.defaults.borderColor = "#2c2d31";
 Chart.defaults.font.family = "'Nunito', Arial, sans-serif";
@@ -7,7 +6,6 @@ Chart.defaults.font.family = "'Nunito', Arial, sans-serif";
 const corTemp = "#ee6340";
 const corUmid = "#ffffff";
 
-// ---------- Dados ----------
 const horarios    = ["12:00", "13:00", "14:00", "15:00", "16:00", "17:00"];
 const temperatura = [30, 29, 28, 25, 22, 23];
 const umidade     = [80, 82, 80, 85, 80, 83];
@@ -16,7 +14,6 @@ const meses       = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"]
 const tempMedia   = [22, 24, 27, 23, 20, 18];
 const umidMedia   = [90, 89, 93, 87, 88, 82];
 
-// ---------- Gráfico de linhas ----------
 new Chart(document.getElementById("graficoLinhas"), {
   type: "line",
   data: {
@@ -48,7 +45,6 @@ new Chart(document.getElementById("graficoLinhas"), {
   }
 });
 
-// ---------- Gráfico de barras ----------
 new Chart(document.getElementById("graficoBarras"), {
   type: "bar",
   data: {
